@@ -3,19 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jevan Ray | Portfolio</title>
+    <title>Jevan Ray Bayedbed | Portfolio</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background: #222; color: white; padding: 20px 0; text-align: center; }
-        nav { background: #333; padding: 10px; text-align: center; position: sticky; top: 0; width: 100%; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        section { padding: 40px; max-width: 800px; margin: auto; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px; border-radius: 5px; }
-        footer { text-align: center; padding: 15px; background: #222; color: white; margin-top: 20px; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
-        a { color: #007BFF; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .container { padding: 20px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7fc;
+            color: #333;
+            padding-top: 50px;
+        }
+        header {
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+        .contact-links a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 1rem;
+                margin: 0 15px;
+            }
+            section {
+                padding: 40px 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -28,13 +116,16 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Fast learner with expertise in lead generation, technical support, and logistics. Strong problem-solving, organizational, and communication skills.</p>
-        <p>Proficient in customer service, data management, and troubleshooting. Passionate about continuous learning and professional growth.</p>
+        <p>I am a fast learner with expertise in lead generation, technical support, and logistics. With strong problem-solving, organizational, and communication skills, I aim to contribute to organizations by providing high-quality service and seamless operations.</p>
+        <p>Proficient in customer service, data management, and troubleshooting, I am passionate about continuous learning and professional growth to stay ahead of industry trends.</p>
     </section>
     
     <section id="experience">
@@ -46,9 +137,9 @@
             <li><strong>PC-Support Engineer</strong> (2014) - Texas Instruments</li>
             <li><strong>Attendant & Maintenance</strong> (2006 - 2008) - Triple J Computer Café</li>
         </ul>
-        <p>Throughout my career, I have honed my skills in technology, operations, and customer service, ensuring efficient processes and top-notch service.</p>
+        <p>Throughout my career, I have honed my skills in technology, operations, and customer service, ensuring efficient processes and top-notch service. I strive to apply my knowledge in solving complex issues and ensuring customer satisfaction.</p>
     </section>
-    
+
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -60,10 +151,36 @@
         </ul>
     </section>
     
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>University of the Philippines Baguio</strong> — Bachelor of Science in Computer Science (2012 - 2016)</li>
+            <li><strong>University of the Philippines Baguio</strong> — High School (2008 - 2012)</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><strong>Google Analytics Certified</strong> (2023)</li>
+            <li><strong>HubSpot Inbound Marketing</strong> (2022)</li>
+            <li><strong>CompTIA IT Fundamentals</strong> (2014)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Lead Generation Automation Tool</strong> — A tool developed to streamline lead generation processes, improving conversion rates by 30% for my previous company. Technologies used: Python, Selenium, MySQL.</li>
+            <li><strong>Internal Ticketing System</strong> — Developed an internal ticketing system for a tech support company to track customer issues, reducing response times by 25%. Technologies used: PHP, MySQL, JavaScript.</li>
+            <li><strong>Website Redesign</strong> — Redesigned the company website to improve user experience and increase engagement. Resulted in a 15% increase in traffic and a 10% increase in conversions.</li>
+        </ul>
+    </section>
+    
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:jevanbayedbed@gmail.com">jevanbayedbed@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jevan-r-0408b6179/" target="_blank">View My LinkedIn Profile</a></p>
+        <p>Email: <a href="mailto:jevanbayedbed@gmail.com" class="contact-links">jevanbayedbed@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jevan-r-0408b6179/" class="contact-links" target="_blank">View My LinkedIn Profile</a></p>
     </section>
     
     <footer>
